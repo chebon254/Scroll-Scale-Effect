@@ -53,10 +53,11 @@ body {
 }
 
 .card-image {
-  width: 400px;
+  width: 100%;
   overflow: hidden;
-  height: 100%;
+  height: fit-content;
   vertical-align: top;
+  transition: transform 0.5s ease-in-out;
 }
 
 .card-image img {
@@ -69,7 +70,9 @@ body {
     transform: scale(0.95);
 }
 
-.card:hover .card-image img{
-    width: ;
+.card-hover .card-image img{
+  /* Image zooms in on hover */
+  transform: scale(1.5);
+  opacity: 1;
 }
 /* == || Card Hover == */
