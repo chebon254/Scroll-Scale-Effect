@@ -22,13 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
    // Get all elements with the class 'card'
    const cards = document.querySelectorAll('.card');
+  
 
    // Function to add the 'hovered' class
    function addHoverClass() {
-    // Store the current id value
-    this.dataset.originalId = this.id;
-    // Set id to null
-    this.id = null;
     // Add the 'hovered' class
     this.classList.add('card-hover');
    }
@@ -36,8 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
    // Function to remove the 'hovered' class
    function removeHoverClass() {
     this.classList.remove('card-hover');
-    // Restore the original id
-    this.id = this.dataset.originalId;
    }
  
    // Add event listeners to each card
